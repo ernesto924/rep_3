@@ -11,3 +11,11 @@ def somma_matrice(A:list[list]):
         for j in range (len(A[i])):
                 somma = somma + A[i][j]
     return somma
+
+def min_matrice(A:list[list]):
+    min=A[0][0]
+    for i in range (len(A)):
+        for j in range (len(A[i])):
+            if A[i][j]< min:
+                min=A[i][j]
+    return min
