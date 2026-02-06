@@ -32,3 +32,11 @@ def somma_elementi(A: np.ndarray, B: np.ndarray) -> np.ndarray:
         for j in range(A.shape[1]):
             C[i][j] = A[i][j] + B[i][j]
     return C
+
+def numeri_2(A: np.ndarray):
+    n_2=0
+    for i in range(A.shape[0]):
+        for j in range(A.shape[0]):
+            if A[i][j]==2:
+                n_2=n_2+1
+    return n_2
