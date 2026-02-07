@@ -40,3 +40,10 @@ def numeri_2(A: np.ndarray):
             if A[i][j]==2:
                 n_2=n_2+1
     return n_2
+
+def fun_1(A:np.ndarray) ->bool:
+    for i in range(A.shape[0]):
+        for j in range(A.shape[0]):
+            if [i]!=[j]:
+                return False
+    return True
