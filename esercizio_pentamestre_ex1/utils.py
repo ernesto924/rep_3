@@ -47,3 +47,15 @@ def fun_1(A:np.ndarray) ->bool:
             if [i]!=[j]:
                 return False
     return True
+
+
+def fun_1_es_4(A:np.ndarray): 
+    s_1=0
+    s_2=0
+    for i in range(A.shape[0]):
+        for j in range(A.shape[0]):
+            if A[i]==A[j]:
+                s_1 += A[i][j]
+            elif i==A.shape[1]-1-j:
+                s_2 += A[i][j]
+    return s_1*s_2
