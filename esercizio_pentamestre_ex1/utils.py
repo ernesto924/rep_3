@@ -59,3 +59,15 @@ def fun_1_es_4(A:np.ndarray):
             elif i==A.shape[1]-1-j:
                 s_2 += A[i][j]
     return s_1*s_2
+
+
+
+def fun_es_5(A:np.ndarray):
+    s_r=0
+    s_m=0
+    for i in range(A.shape[0]):
+        for j in range(A.shape[1]):
+            s_r = A[i][j]
+            if s_r>s_m:
+                s_r=s_m
+    return i
